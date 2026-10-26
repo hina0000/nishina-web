@@ -73,13 +73,24 @@
     display: block;
 }
 
+
 @media screen and (max-width: 600px) {
     .navigation {
-        gap: 5px;
+        width: 98%;
+        padding: 12px 2px;
     }
 
     .navigation a {
-        font-size: 12px;
+        flex: 1;
+        min-width: 0;
+        font-size: 10px;
         white-space: nowrap;
+        gap: 5px;
+    }
+
+    .navigation img {
+        width: 28px;
+        height: 28px;
     }
 }
+
