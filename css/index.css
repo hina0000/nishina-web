@@ -206,6 +206,17 @@
         flex-direction: column;
     }
 
+    @media screen and (max-width: 600px) {
+    .navigation {
+        gap: 5px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
     .study-images img {
         width: 100%;
     }
