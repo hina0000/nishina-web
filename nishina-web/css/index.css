@@ -1,0 +1,212 @@
+
+/* ナビゲーション全体 */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px 0;
+
+    background-color: #fff7f8;
+    border-radius: 18px;
+}
+
+/* それぞれのリンク */
+.navigation a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    text-decoration: none;
+    color: #ad737b;
+
+    font-size: 12px;
+    gap: 8px;
+
+    border-right: 1px solid #f5dfe2;
+}
+
+/* 最後のリンクだけ右線を消す */
+.navigation a:last-child {
+    border-right: none;
+}
+
+/* アイコン画像 */
+.navigation img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* リンクを押したとき */
+.navigation a:hover {
+    opacity: 0.65;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    color: #95666a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-text h2 {
+    color: #e99ba5;
+    font-family: cursive;
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.about-text .subtitle {
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 220px;
+    }
+}
+
+
+/* セクション共通 */
+.teacher,
+.study {
+    width: 90%;
+    margin: 70px auto;
+}
+
+/* 見出し */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-family: cursive;
+    font-size: 36px;
+    font-weight: normal;
+    color: #e99ba5;
+    margin: 0;
+}
+
+.section-title p {
+    color: #95666a;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+/* 講師紹介 */
+.teacher-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #fff8f9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.teacher-content img {
+    width: 40%;
+    max-width: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.teacher-text {
+    flex: 1;
+    color: #95666a;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* 学習支援 */
+.study-content {
+    background-color: #fff8f9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.study-images {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.study-images img {
+    width: 50%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.study-content p {
+    color: #95666a;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+
+    .teacher-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teacher-content img {
+        width: 70%;
+    }
+
+    .teacher-text {
+        width: 100%;
+    }
+
+    .study-images {
+        flex-direction: column;
+    }
+
+    .study-images img {
+        width: 100%;
+    }
+}

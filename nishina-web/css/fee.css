@@ -1,0 +1,148 @@
+/* ナビゲーション全体 */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px 0;
+
+    background-color: #fff7f8;
+    border-radius: 18px;
+}
+
+/* それぞれのリンク */
+.navigation a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    text-decoration: none;
+    color: #ad737b;
+
+    font-size: 12px;
+    gap: 8px;
+
+    border-right: 1px solid #f5dfe2;
+}
+
+/* 最後のリンクだけ右線を消す */
+.navigation a:last-child {
+    border-right: none;
+}
+
+/* アイコン画像 */
+.navigation img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* リンクを押したとき */
+.navigation a:hover {
+    opacity: 0.65;
+}
+
+
+/* 料金ページ全体 */
+.fee-page {
+    width: 90%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+
+/* 料金カード */
+.fee-card {
+    background-color: #fff8f9;
+    border: 1px solid #f8e5e8;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+/* カードのタイトル */
+.fee-card h3 {
+    color: #d98794;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f1d5da;
+}
+
+/* 入会金 */
+.fee-price {
+    color: #95666a;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 料金カテゴリー */
+.fee-category {
+    margin-top: 25px;
+}
+
+/* カテゴリーの見出し */
+.fee-category h4 {
+    color: #c77d89;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+/* 料金の1行 */
+.fee-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    border-bottom: 1px solid #f3e5e7;
+    color: #95666a;
+    font-size: 15px;
+}
+
+/* 補足説明 */
+.fee-note {
+    color: #a78387;
+    font-size: 12px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+/* 回数券の説明 */
+.fee-message {
+    background-color: #f9e9ec;
+    color: #95666a;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+
+    .fee-page {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .fee-card {
+        padding: 18px;
+    }
+
+    .fee-row {
+        font-size: 14px;
+    }
+
+    .fee-price {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,56 @@
+/* ナビゲーション全体 */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px 0;
+
+    background-color: #fff7f8;
+    border-radius: 18px;
+}
+
+/* それぞれのリンク */
+.navigation a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    text-decoration: none;
+    color: #ad737b;
+
+    font-size: 12px;
+    gap: 8px;
+
+    border-right: 1px solid #f5dfe2;
+}
+
+/* 最後のリンクだけ右線を消す */
+.navigation a:last-child {
+    border-right: none;
+}
+
+/* アイコン画像 */
+.navigation img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* リンクを押したとき */
+.navigation a:hover {
+    opacity: 0.65;
+}
+
+
+.schedule-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}

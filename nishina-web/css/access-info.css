@@ -1,0 +1,74 @@
+/* ナビゲーション全体 */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px 0;
+
+    background-color: #fff7f8;
+    border-radius: 18px;
+}
+
+/* それぞれのリンク */
+.navigation a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    text-decoration: none;
+    color: #ad737b;
+
+    font-size: 12px;
+    gap: 8px;
+
+    border-right: 1px solid #f5dfe2;
+}
+
+/* 最後のリンクだけ右線を消す */
+.navigation a:last-child {
+    border-right: none;
+}
+
+/* アイコン画像 */
+.navigation img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* リンクを押したとき */
+.navigation a:hover {
+    opacity: 0.65;
+}
+
+
+.access-card {
+    background-color: #fff8f9;
+    border: 1px solid #f1d5da;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.access-card h2 {
+    color: #d98794;
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 12px;
+    display: block;
+}
